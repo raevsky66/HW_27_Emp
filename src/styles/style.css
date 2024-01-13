@@ -1,0 +1,14 @@
+.form-group{
+    margin-bottom: 20px;
+
+}
+.hide{
+    display: none;
+}
+.nav-item {
+    border: black solid 1px;
+    border-radius: 15px;
+}
+.nav-link:hover {
+    cursor: pointer;
+}
