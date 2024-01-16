@@ -8,6 +8,7 @@ export default class EmployeesGenerator {
 
     getRandomEmployee = function () {
         return {
+
             id: this.random.getRandomNumber(1, 1000),
             name: this.random.getRandomValue(emloyersName),
             salary: this.random.getRandomNumber(10000, 20000),
