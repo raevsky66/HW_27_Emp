@@ -25,12 +25,13 @@ export default class Navigator{
     createBtn = (selector) => {
         const btn = document.createElement('li');
         btn.className = 'nav-item';
+        btn.classList.add('ms-1','mt-1')
         btn.innerHTML = `<label class="nav-link">${createDescr(selector)}</label>`;
         btn.onclick = () => {
             this.hideAll();
             document.querySelector(selector).classList.remove('hide');
-            this.deactiveAllBtns();
-            btn.classList.add('active');
+            // this.deactiveAllBtns();
+            // btn.classList.add('active');
         }
         return btn;
     }

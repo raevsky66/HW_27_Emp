@@ -8,6 +8,7 @@
 .nav-item {
     border: black solid 1px;
     border-radius: 15px;
+
 }
 .nav-link:hover {
     cursor: pointer;

@@ -11,12 +11,12 @@ export default class FormHandler {
             let objData = {};
             const random = new Random();
             objData.id = random.getRandomNumber(1,1000);
-            console.log("Random!!!"+objData.id);
-            console.log(this.formElement);
-            console.log(this.formElement.elements);
+            // console.log("Random!!!"+objData.id);
+            // console.log(this.formElement);
+            // console.log(this.formElement.elements);
             const data = Array.from(this.formElement.elements);
-            console.log(data);
-            console.log(data.filter(item => item.name))
+            // console.log(data);
+            // console.log(data.filter(item => item.name))
             data.filter(item => item.name)
                 .map(element => {
                     const {name, value} = element;

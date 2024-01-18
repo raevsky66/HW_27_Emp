@@ -1,6 +1,5 @@
 export default function createDescr(string) {
     const words = string.split('');
-    console.log(words);
     const newWords = words.map((word) => {
         if (!(word === '#')) {
 

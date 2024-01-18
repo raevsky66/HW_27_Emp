@@ -12,16 +12,16 @@ export default class Company {
         return false;
     }
 
-    fire = function (emloyer_id) {
-        if (!this.data[emloyer_id])
+    fire = function (employer_id) {
+        if (!this.data[employer_id])
             return false
-        delete this.data[emloyer_id];
+        delete this.data[employer_id];
         return true
     }
 
-    get = function (id) {
-        return this.data[id]
-    }
+    // employer = function (id) {
+    //     return this.data[id]
+    // }
 
     getAll = function () {
         return Object.values(this.data);
